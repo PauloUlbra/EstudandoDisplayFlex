@@ -1,0 +1,179 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+    color:white;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+header{
+    background-color: rgb(46, 46, 46);
+    display: flex;
+    justify-content: space-between;
+    color:white;
+    padding: 20px;
+    padding-left: 5px;
+    align-items: center;
+    height: 100px;
+}
+nav ul{
+    display:flex;
+    list-style: none;
+}
+nav li{
+    margin: 18px;
+    padding: 10px 0;
+}
+nav a:hover{
+    color: rgb(46, 46, 46);
+    background-color: #fff;
+}
+nav a{
+    color:white;
+    text-decoration: none;
+    padding: 10px;
+}
+section{
+    max-width: 1000px;
+}
+
+.about img{
+    border-radius: 10px;
+    width: 300px;
+}
+.about img:hover{
+    box-shadow: 0 0 5px #fff;
+}
+.about{
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+    margin-top: 50px;
+}
+.text{
+    padding: 20px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    flex-direction: column;
+    align-items: center;
+}
+.text h2{
+    text-align: center;
+    margin-bottom:20px;
+}
+.text p{
+    text-align: justify;
+}
+.projects{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+}
+.projects p{
+    text-align:justify;
+}
+.proj img{
+    width: 280px;
+    height: 152px;
+}
+.proj img:hover{
+    border: 1px solid white;
+}
+.proj{
+    padding: 20px;
+    width: 33%;
+}
+.contato{
+    display: flex;
+}
+form label{
+    text-decoration: double;
+    font-weight: bold;
+}
+form input{
+    color:black;
+    width: 960px;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+form textarea{
+    color:black;
+    width: 960px;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+form button{
+    background-color: rgb(46, 46, 46);
+    width: 960px;
+    cursor: pointer;
+    padding: 10px;
+    color:#fff;
+    border: 1px;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 35px;
+}
+form button:hover{
+    color:rgb(46, 46, 46);
+    background-color: #fff;
+}
+footer{
+    background-color: rgb(46, 46, 46);
+    display: flex;
+    justify-content: center;
+    color:white;
+    align-items: center;
+    height: 70px;
+}
+footer ul{
+    display:flex;
+    list-style: none;
+}
+footer a{
+    padding: 10px;
+}
+footer a:hover{
+    color: rgb(46, 46, 46);
+    background-color: #fff;
+}
+i:hover{
+    background-color: #fff;
+    color:rgb(46, 46, 46)
+}
+@media screen and (max-width:768px){
+    header{
+        flex-direction: column;
+        height: 110px;
+    }
+    .projects{
+        justify-content: center;
+    }
+    .proj{
+        width: 50%;
+        padding-left: 50px;
+    }
+    form, input, button, textarea{
+        max-width: 668px;
+    }
+}
+@media screen and (max-width:576px){
+    header{
+        flex-direction: column;
+        height: 120px;
+    }
+    section{
+        max-width: 576px;
+    }
+    .about img{
+        width:300px;
+    }
+}
